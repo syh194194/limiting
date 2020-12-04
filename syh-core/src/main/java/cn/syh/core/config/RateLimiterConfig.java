@@ -1,7 +1,7 @@
 package cn.syh.core.config;
 
 import cn.syh.core.exception.LimitingException;
-import cn.syh.core.ticket.TicketServer;
+import cn.syh.core.test.TestServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +16,7 @@ public class RateLimiterConfig {
     private static volatile RateLimiterConfig rateLimiterConfig; //单例
     private static Logger logger = LoggerFactory.getLogger(RateLimiterConfig.class);
 
-    private TicketServer ticketServer; //发票服务器
+    private TestServer ticketServer; //发票服务器
     private ScheduledExecutorService scheduledThreadExecutor; //调度线程池
 
     //Ticket server interface
@@ -55,7 +55,7 @@ public class RateLimiterConfig {
         this.scheduledThreadExecutor = scheduledThreadExecutor;
     }
 
-    public TicketServer getTicketServer() {
+    public TestServer getTicketServer() {
         if (ticketServer == null) {
             throw new LimitingException("error: ticketServer == null");
         }
@@ -69,7 +69,7 @@ public class RateLimiterConfig {
         if (this.ticketServer == null) {
             synchronized (this) {
                 if (this.ticketServer == null) {
-                    this.ticketServer = new TicketServer();
+                    this.ticketServer = new TestServer();
                 }
             }
         }

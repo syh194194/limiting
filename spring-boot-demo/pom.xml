@@ -16,24 +16,24 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <snowjean.version>3.0.0.RELEASE</snowjean.version>
+        <limiting.version>3.0.0.RELEASE</limiting.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>cn.syh</groupId>
             <artifactId>syh-core</artifactId>
-            <version>${snowjean.version}</version>
+            <version>${limiting.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.syh</groupId>
             <artifactId>syh-annotation</artifactId>
-            <version>${snowjean.version}</version>
+            <version>${limiting.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.syh</groupId>
-            <artifactId>syh-spring-boot-starter</artifactId>
-            <version>${snowjean.version}</version>
+            <artifactId>limiting</artifactId>
+            <version>3.0.0.RELEASE</version>
         </dependency>
 
 

@@ -13,6 +13,8 @@
         <module>syh-monitor</module>
         <module>syh-core</module>
         <module>syh-annotation</module>
+        <module>spring-boot-demo</module>
+        <module>syh-demoLimit-server</module>
     </modules>
 
     <name>limiting</name>
@@ -105,10 +107,10 @@
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.7.1</version>
                 </plugin>
-                <plugin>
-                    <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>3.0.0</version>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <artifactId>maven-project-info-reports-plugin</artifactId>-->
+<!--                    <version>3.0.0</version>-->
+<!--                </plugin>-->
             </plugins>
         </pluginManagement>
     </build>

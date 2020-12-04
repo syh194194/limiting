@@ -1,4 +1,4 @@
-package cn.syh.core.ticket;
+package cn.syh.core.test;
 
 import cn.syh.commoon.http.HttpUtil;
 import org.slf4j.Logger;
@@ -12,11 +12,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 发票服务器,负载均衡
+ * 测试服务器,负载均衡
  * 自动故障服务检测与切换
  */
-public class TicketServer {
-    private Logger logger = LoggerFactory.getLogger(TicketServer.class);
+public class TestServer {
+    private Logger logger = LoggerFactory.getLogger(TestServer.class);
     private List<String> serverList = new CopyOnWriteArrayList<>(); //读多写少
     private List<String> backupsList = new CopyOnWriteArrayList<>();
     private ReentrantLock lock = new ReentrantLock();

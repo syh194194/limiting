@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.10.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>cn.syh</groupId>
+    <artifactId>syh-spring-boot-starter</artifactId>
+    <version>3.0.0.RELEASE</version>
+
+    <name>syh-spring-boot-starter</name>
+    <description>syh for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.syh</groupId>
+            <artifactId>syh-core</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.syh</groupId>
+            <artifactId>syh-annotation</artifactId>
+            <version>${version}</version>
+        </dependency>
+    </dependencies>
+
+
+
+</project>
